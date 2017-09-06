@@ -1,0 +1,104 @@
+@charset "utf-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ol,ul{
+  list-style: none;
+}
+input,select,form img,button{
+  vertical-align: middle;
+  -webkit-tap-highlight-color:transparent ;
+  outline: none;
+}
+.clearfix:after{
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix{
+  zoom:1;
+}
+textarea{
+  width: 95%;
+}
+a{
+  color: #000;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover,a:focus{
+  text-decoration: none;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  font-size: 100%;
+}
+ul,ol,li{
+  list-style: none;
+}
+em,i{
+  font-style: normal;
+}
+img{
+  border: none;
+}
+input,img{
+  vertical-align: middle;
+}
+body{
+  color: #000;
+  font-family: arial;
+  overflow-x: hidden;
+  background-color: #f5f5f5;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.red{
+  color: #f00;
+}
+//头部开始
+.header{
+  background: #ff841d;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  >.left{
+    >img{
+      height: 25px;
+    }
+  }
+  >.right{
+    >img{
+      height: 34px;
+    }
+  }
+}
+//头部结束
+
+//底部开始
+footer{
+  text-align: center;
+  >.row{
+    margin: 10px 0;
+    >div{
+      height: 30px;
+      line-height: 30px;
+      border:1px solid #ccc;
+    }
+    div+div{
+      border-left:0;
+    }
+  }
+}
+//底部结束
